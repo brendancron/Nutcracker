@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+	<header>
+		<title>Nutcracker Game</title>
+		<link rel="stylesheet" href="style.css" />
+		
+	</header>
+	
+	<body>
+	
+		<audio id="my_audio" loop="true">
+  			<source src="songs/Overture.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		
+		<button id="next_song" onclick="next_song()"> Next Song </button>
+		
+		<button id="check_answers" onclick="checkAnswers()"> Check Answers </button>		
+			
+		<div class="flex-wrapper">
+ 	 		<div class="single-chart" id="container">
+		  	</div>
+		</div>			
+				
+		<br><br>
+
+		<table id="song_list"></table>
+		
+		<table id="my_order"></table>
+
+		<script src="music.js"></script>
+	</body>
+</html>
