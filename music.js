@@ -9,6 +9,9 @@ var list = document.getElementById("song_list");
 var table = document.getElementById("my_order");
 		
 function main() {
+	audio.addEventListener("ended", function() {
+   	next_song();
+	});
 	init_song_list();
 	make_list();
 	song_list = shuffle(song_list);
